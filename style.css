@@ -19,8 +19,7 @@ background-color: #ff900e;
 
 .header-bannar{
  background: rgba(255, 144, 14, 0.1);
- height: 100%;
- width: 1920px;
+ width:1920px;
  margin:0 auto ;
 }
 nav{
@@ -232,7 +231,7 @@ color: #727272;
 .info-container:hover{
  border:4px solid #0eff1e ;
  transition: .5s;
- transform: scale(1.5,1.5);
+ transform: scale(1.1);
 }
 .info-container p{
  font-weight: 600;
