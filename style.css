@@ -19,7 +19,7 @@ background-color: #ff900e;
 
 .header-bannar{
  background: rgba(255, 144, 14, 0.1);
- width:1920px;
+ width:100%;
  margin:0 auto ;
 }
 nav{
@@ -33,7 +33,6 @@ nav ul{
  display: flex;
  align-items: center;
  gap: 50px;
- /* margin-top: 13px; */
 }
 nav ul li{
  list-style: none;
@@ -245,6 +244,24 @@ margin-bottom: 5px;
 font-size: 20px;
 color: #727272;
 }
+.project h2{
+ text-align: center;
+ font-size: 45px;
+ font-weight: 700;
+ margin-bottom: 40px;
+}
+.projects{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 80px;
+ margin-bottom: 130px;
+}
+.projects img{
+ height: 250px;
+ width: 300px;
+ border-radius: 10px;
+}
 
 /* sponsor section css */
 
@@ -287,4 +304,51 @@ margin-bottom: 150px;
  color: #424242;
  background-color: #fff4e7;
  padding: 40px 410px;
+}
+
+
+/* Responsive Part */
+
+
+@media screen and (max-width:576px) {
+ .header-bannar{
+  width:100%;
+ }
+nav{
+ flex-direction: column;
+ gap: 30px;
+ align-items: center;
+}
+nav ul,.photo-feature,.exprience-details,.information,.projects,.brand{
+ flex-direction: column;
+}
+.bannar-des-container, .bannar-img
+img,.feature,.exprience-des, .exprience-photo img{
+  width: 100%;
+  text-align: center;
+ }
+ .photo{
+  grid-template-columns: repeat(1,1fr);
+ }
+ .exprience-photo{
+  padding-left: 0px;
+  padding-bottom: 0px;
+ }
+ .btn-container{
+  left:0;
+  bottom: 0;
+  margin-top: 30px;
+ }
+ .fact{
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+ } 
+ .footer{
+  margin-bottom: 50px;
+ }
+ .footer-description{
+padding: 10px;
+
+ }
 }
